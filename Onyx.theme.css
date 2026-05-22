@@ -1,0 +1,109 @@
+/**
+  * @name Onyx
+  * @author Acrilic
+  * @version 1.0.0
+  * @description A clean, highly customized Onyx-dark theme for Discord. Forked and modified from Dark+ by DevEvil.
+  * @authorId 468132563714703390
+  * @source https://github.com/AKRiLLiCK/Onyx
+  * @credits DevEvil (original author of Dark+)
+*/
+
+/* 
+  TO USE THE THEME WITH THE DEFAULT MEMBER LIST:
+  → Comment out the first @import line below.
+  → Then, uncomment the second @import line.
+*/
+@import url('https://devevil99.github.io/devevil/BetterDiscordAddons/Theme/Dark+/Dark+.theme.css');
+/*@import url('https://devevil99.github.io/devevil/BetterDiscordAddons/Theme/Dark%2B/Dark%2B-Default-Member-List.css');*/
+
+
+:root {
+  --darkplus-bg: #121212;
+  --darkplus-bg2: #1e1e1e;
+  --darkplus-sec: #ffffff;
+  --darkplus-links: #ffffff;
+  --darkplus-home-icon: url(https://i.imgur.com/RvlNQ7k.png);
+  --watermark-filter-invert: 0%;
+  --watermark-filter-sepia: 50%;
+  --watermark-filter-saturate: 3000%;
+  --watermark-filter-hue-rotate: 210deg;
+  --watermark-filter-brightness: 70%;
+  --watermark-filter-contrast: 200%;
+
+  /* Soft Onyx Mentions */
+  --background-mentioned: rgba(255, 255, 255, 0.05) !important;
+  --background-mentioned-hover: rgba(255, 255, 255, 0.08) !important;
+  --mention-background: rgba(255, 255, 255, 0.1) !important;
+  --mention-foreground: #cccccc !important;
+}
+
+/* Explicit CSS overrides for mentions to ensure they are soft and readable */
+.mention {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #cccccc !important;
+  font-weight: 500;
+}
+.mention:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+[class*="mentioned"] {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+[class*="mentioned"]::before {
+  background-color: #888888 !important; /* A muted gray border instead of bright white/orange */
+}
+
+/* Make collapsed member list sidebar wider so numbers don't get cut off */
+[class*="membersWrap"] {
+  width: 85px !important;
+  min-width: 85px !important;
+}
+[class*="membersWrap"] [class*="members"] {
+  width: 85px !important;
+}
+[class*="membersWrap"]:hover {
+  width: 240px !important;
+  min-width: 240px !important;
+}
+[class*="membersWrap"]:hover [class*="members"] {
+  width: 240px !important;
+}
+
+/* Hide usernames, subtext, and badges when collapsed, and transition them smoothly */
+[class*="membersWrap"] [class*="member"] [class*="username__"],
+[class*="membersWrap"] [class*="member"] [class*="name__"],
+[class*="membersWrap"] [class*="member"] [class*="activity__"],
+[class*="membersWrap"] [class*="member"] [class*="subText__"],
+[class*="membersWrap"] [class*="member"] [class*="badges__"],
+[class*="membersWrap"] [class*="member"] [class*="botTag__"],
+[class*="membersWrap"] [class*="member"] [class*="decorator__"] {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+[class*="membersWrap"]:not(:hover) [class*="member"] [class*="username__"],
+[class*="membersWrap"]:not(:hover) [class*="member"] [class*="name__"],
+[class*="membersWrap"]:not(:hover) [class*="member"] [class*="activity__"],
+[class*="membersWrap"]:not(:hover) [class*="member"] [class*="subText__"],
+[class*="membersWrap"]:not(:hover) [class*="member"] [class*="badges__"],
+[class*="membersWrap"]:not(:hover) [class*="member"] [class*="botTag__"],
+[class*="membersWrap"]:not(:hover) [class*="member"] [class*="decorator__"] {
+  opacity: 0 !important;
+  transform: translateX(-10px);
+  pointer-events: none;
+}
+
+/* Make bot/app tags Discord blue when visible */
+[class*="botTag__"] {
+  background-color: #5865f2 !important;
+  color: #ffffff !important;
+}
+
+/* Hide the offline group header when collapsed */
+[class*="membersWrap"]:not(:hover) [class*="membersGroup__"]:not(:has(~ [class*="membersGroup__"])),
+[class*="membersWrap"]:not(:hover) [class*="membersGroup"]:not(:has(~ [class*="membersGroup"])) {
+  display: none !important;
+}
+
+
+
+
