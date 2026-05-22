@@ -104,6 +104,26 @@
   display: none !important;
 }
 
+/* Custom Watermark override to display your own name */
+[class*="title_c38106"]:after,
+.title_c38106:after {
+  content: "NOX BY ACRILIC" !important;
+  font-family: "Inter", "Outfit", "Helvetica Neue", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  color: #8a94fd !important; /* Premium soft violet-blue accent */
+  background: none !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin-left: 10px !important;
+  filter: none !important;
+  width: auto !important;
+  height: auto !important;
+}
+
 
 
 
