@@ -1,42 +1,40 @@
-# Nox Discord Theme
+# <img src="https://skillicons.dev/icons?i=discord" width="38" align="center" /> Nox
 
 A sleek, premium dark and polished user list theme for Vesktop, Vencord, and BetterDiscord.
 
-Original theme: **[Dark+](https://github.com/DevEvil99/DarkPlus-Discord-Theme)** by **[DevEvil](https://github.com/DevEvil99)**.
-Customized and modified by: **[Acrilic](https://github.com/AKRiLLiCK)**.
-
-[![Tech Stack](https://skillicons.dev/icons?i=css,discord,git,github)](https://skillicons.dev)
+**Original Author:** [DevEvil](https://github.com/DevEvil99) ([Dark+](https://github.com/DevEvil99/DarkPlus-Discord-Theme))  
+**Customized & Modified by:** [Acrilic](https://github.com/AKRiLLiCK)
 
 ---
 
-## Features
+![Nox Banner](./nox_banner.png)
 
-* **Nox-Dark Palette**: Premium dark grey and black background colors (#121212 / #1e1e1e) designed to be highly comfortable for extended use.
-* **Muted Mentions**: Soft, semi-transparent highlight overlays and muted grey borders to reduce visual noise.
-* **Optimized Collapsed Sidebar**: The collapsed member list is widened (to 85px) to prevent server group header counters from clipping.
-* **Clean Member List**: Profile pictures and custom injected user list card backgrounds remain visible, while usernames, custom subtext, and badges are hidden in the collapsed view, transitioning smoothly back on hover.
-* **Custom App and Bot Badges**: App and Bot tags are colored in striking Discord brand blue (#5865f2).
-* **Smart Header Behavior**: The Offline group header text is automatically hidden when the sidebar is collapsed.
-* **Branded Title Bar**: Features a custom, elegant "NOX BY ACRILIC" text logo in a soft violet-blue accent.
+## <img src="https://skillicons.dev/icons?i=github" width="28" align="center" /> Overview
+
+Nox is a refined, ultra-dark custom stylesheet designed to elevate your Discord client experience with an onyx-inspired visual design, comfortable contrast, and micro-animations.
+
+### Core Enhancements
+- **Onyx Aesthetics**: Deep dark `#121212` backgrounds with muted borders and soft translucent highlights.
+- **Smart Member List**: The collapsed sidebar expands to `85px` to keep profile pictures visible while hiding usernames and offline groups to save space.
+- **Custom Accents**: Branded violet-blue `"NOX BY ACRILIC"` watermark logo in the title bar and blue Discord app badges.
 
 ---
 
-## Installation
+## <img src="https://skillicons.dev/icons?i=css" width="28" align="center" /> Installation
 
-### Option 1: Direct File Installation
-1. Download **[Nox.theme.css](./Nox.theme.css)** from this repository.
-2. Place the file inside your Discord/Vesktop themes folder (Settings -> Themes -> Open Themes Folder).
-3. Enable the theme in your client settings.
-
-### Option 2: Online Import
+### Quick Import
 Add this line directly to your client's custom CSS settings:
 
 ```css
 @import url('https://raw.githubusercontent.com/AKRiLLiCK/Nox/main/Nox.theme.css');
 ```
 
+### Manual Install
+1. Download [Nox.theme.css](./Nox.theme.css) and place it inside your client's themes folder.
+2. Enable **Nox** in your client settings.
+
 ---
 
-## License
+## <img src="https://skillicons.dev/icons?i=git" width="28" align="center" /> License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
