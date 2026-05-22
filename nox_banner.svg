@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121212" />
+      <stop offset="100%" stop-color="#1e1e1e" />
+    </linearGradient>
+    
+    <!-- Accent Violet-Blue Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a94fd" />
+      <stop offset="100%" stop-color="#5865f2" />
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="800" height="250" rx="16" fill="url(#bg-grad)" stroke="#1e1e1e" stroke-width="2" />
+
+  <!-- Diagonal Grid Effect -->
+  <path d="M-100,250 L250,-100 M-50,250 L300,-100 M0,250 L350,-100 M50,250 L400,-100 M100,250 L450,-100" stroke="#1e1e1e" stroke-width="1.5" opacity="0.3" />
+
+  <!-- Glowing Abstract Orb -->
+  <circle cx="700" cy="125" r="80" fill="url(#accent-grad)" opacity="0.15" filter="url(#glow)" />
+  <circle cx="700" cy="125" r="40" fill="url(#accent-grad)" opacity="0.25" />
+
+  <!-- Premium Typography -->
+  <!-- NOX Title -->
+  <text x="60" y="115" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="56" fill="url(#accent-grad)" letter-spacing="2">NOX</text>
+  
+  <!-- Subtitle -->
+  <text x="60" y="150" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="20" fill="#a0a0a0" letter-spacing="1">VESKTOP &amp; VENCORD THEME</text>
+
+  <!-- Sleek Tagline -->
+  <text x="60" y="180" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="14" fill="#626262" letter-spacing="0.5">Ultra-dark onyx aesthetics with a premium polished layout</text>
+
+  <!-- Top Decorative Line -->
+  <line x1="60" y1="55" x2="160" y2="55" stroke="url(#accent-grad)" stroke-width="3" stroke-linecap="round" />
+</svg>
