@@ -19,7 +19,7 @@ A sleek, premium dark and polished user list theme for Vesktop, Vencord, and Bet
 
 ---
 
-## <img src="https://skillicons.dev/icons?i=github" width="28" align="middle" /> Overview
+## <img src="https://skillicons.dev/icons?i=github" width="34" align="middle" /> Overview
 
 Nox is a refined, ultra-dark custom stylesheet designed to elevate your Discord client experience with an onyx-inspired visual design, comfortable contrast, and micro-animations.
 
@@ -32,7 +32,7 @@ Nox is a refined, ultra-dark custom stylesheet designed to elevate your Discord 
 
 ---
 
-## <img src="https://skillicons.dev/icons?i=css" width="28" align="middle" /> Installation
+## <img src="https://skillicons.dev/icons?i=css" width="34" align="middle" /> Installation
 
 ### Quick Import
 Add this line directly to your client's custom CSS settings:
@@ -47,6 +47,6 @@ Add this line directly to your client's custom CSS settings:
 
 ---
 
-## <img src="https://skillicons.dev/icons?i=git" width="28" align="middle" /> License
+## <img src="https://skillicons.dev/icons?i=git" width="34" align="middle" /> License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
