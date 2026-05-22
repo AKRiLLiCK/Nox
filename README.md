@@ -1,14 +1,14 @@
-# 💎 Onyx Discord Theme
+# 💎 Nox Discord Theme
 
-A sleek, premium Onyx-dark and meticulously polished theme for **Vesktop**, **Vencord**, and **BetterDiscord**. 
+A sleek, premium Nox-dark and meticulously polished theme for **Vesktop**, **Vencord**, and **BetterDiscord**. 
 
-This theme is forked and highly customized from the beautiful **[Dark+ Theme](https://github.com/DevEvil99/DarkPlus-Discord-Theme)** originally designed by **DevEvil**, refined with a deep, rich Onyx-dark palette, muted elements, and a completely redesigned collapsible member list.
+This theme is forked and highly customized from the beautiful **[Dark+ Theme](https://github.com/DevEvil99/DarkPlus-Discord-Theme)** originally designed by **DevEvil**, refined with a deep, rich Nox-dark palette, muted elements, and a completely redesigned collapsible member list.
 
 ---
 
 ## ✨ Features
 
-*   🖤 **Onyx-Dark Aesthetics**: Replaces default bright/purple backgrounds with a curated, premium dark grey/black palette (`#121212` and `#1e1e1e`) that is incredibly easy on the eyes.
+*   🖤 **Nox-Dark Aesthetics**: Replaces default bright/purple backgrounds with a curated, premium dark grey/black palette (`#121212` and `#1e1e1e`) that is incredibly easy on the eyes.
 *   💬 **Soft, Elegant Mentions**: Harsh, glowing orange/white mention highlights and tags are transformed into soft, semi-transparent light overlays with muted grey left-borders.
 *   📐 **Optimized Collapsed Sidebar**: The collapsed member list sidebar is widened slightly (from `60px` to `85px`) so server group header counters (e.g. `860` or `4,124`) are perfectly readable and never cut off.
 *   👁️ **Distraction-Free Member List**: 
@@ -22,17 +22,17 @@ This theme is forked and highly customized from the beautiful **[Dark+ Theme](ht
 ## 🚀 Installation
 
 ### Option 1: Direct File Installation (Recommended)
-1.  Download **[`Onyx.theme.css`](./Onyx.theme.css)** from this repository.
+1.  Download **[`Nox.theme.css`](./Nox.theme.css)** from this repository.
 2.  Open Discord / Vesktop, and go to **Settings** -> **Vencord** (or BetterDiscord) -> **Themes**.
 3.  Click **Open Themes Folder**.
-4.  Move `Onyx.theme.css` into that directory.
+4.  Move `Nox.theme.css` into that directory.
 5.  Toggle the theme **On** in your client settings!
 
 ### Option 2: Online Import (Vencord / BetterDiscord)
 If you prefer to auto-update the theme directly from GitHub, add this line to your **Custom CSS** settings in Vesktop/Vencord:
 
 ```css
-@import url('https://raw.githubusercontent.com/AKRiLLiCK/Onyx/main/Onyx.theme.css');
+@import url('https://raw.githubusercontent.com/AKRiLLiCK/Nox/main/Nox.theme.css');
 ```
 
 ---
@@ -40,6 +40,6 @@ If you prefer to auto-update the theme directly from GitHub, add this line to yo
 ## 📜 Credits & License
 
 *   Original Theme: **[Dark+](https://github.com/DevEvil99/DarkPlus-Discord-Theme)** by **[DevEvil](https://github.com/DevEvil99)**.
-*   Onyx Customization & Refinement: **[Acrilic](https://github.com/AKRiLLiCK)**.
+*   Nox Customization & Refinement: **[Acrilic](https://github.com/AKRiLLiCK)**.
 
 This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details. Included copyright notice for the original works remains with DevEvil99.

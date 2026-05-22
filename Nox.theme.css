@@ -1,10 +1,10 @@
 /**
-  * @name Onyx
+  * @name Nox
   * @author Acrilic
   * @version 1.0.0
-  * @description A clean, highly customized Onyx-dark theme for Discord. Forked and modified from Dark+ by DevEvil.
+  * @description A clean, highly customized Nox-dark theme for Discord. Forked and modified from Dark+ by DevEvil.
   * @authorId 468132563714703390
-  * @source https://github.com/AKRiLLiCK/Onyx
+  * @source https://github.com/AKRiLLiCK/Nox
   * @credits DevEvil (original author of Dark+)
 */
 
@@ -30,7 +30,7 @@
   --watermark-filter-brightness: 70%;
   --watermark-filter-contrast: 200%;
 
-  /* Soft Onyx Mentions */
+  /* Soft Nox Mentions */
   --background-mentioned: rgba(255, 255, 255, 0.05) !important;
   --background-mentioned-hover: rgba(255, 255, 255, 0.08) !important;
   --mention-background: rgba(255, 255, 255, 0.1) !important;
