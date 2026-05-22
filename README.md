@@ -1,35 +1,35 @@
-# 💎 Nox Discord Theme
+# Nox Discord Theme
 
-A sleek, premium Nox-dark and meticulously polished theme for **Vesktop**, **Vencord**, and **BetterDiscord**. 
+A sleek, premium dark and polished user list theme for Vesktop, Vencord, and BetterDiscord.
 
-This theme is forked and highly customized from the beautiful **[Dark+ Theme](https://github.com/DevEvil99/DarkPlus-Discord-Theme)** originally designed by **DevEvil**, refined with a deep, rich Nox-dark palette, muted elements, and a completely redesigned collapsible member list.
+Original theme: **[Dark+](https://github.com/DevEvil99/DarkPlus-Discord-Theme)** by **[DevEvil](https://github.com/DevEvil99)**.
+Customized and modified by: **[Acrilic](https://github.com/AKRiLLiCK)**.
 
----
-
-## ✨ Features
-
-*   🖤 **Nox-Dark Aesthetics**: Replaces default bright/purple backgrounds with a curated, premium dark grey/black palette (`#121212` and `#1e1e1e`) that is incredibly easy on the eyes.
-*   💬 **Soft, Elegant Mentions**: Harsh, glowing orange/white mention highlights and tags are transformed into soft, semi-transparent light overlays with muted grey left-borders.
-*   📐 **Optimized Collapsed Sidebar**: The collapsed member list sidebar is widened slightly (from `60px` to `85px`) so server group header counters (e.g. `860` or `4,124`) are perfectly readable and never cut off.
-*   👁️ **Distraction-Free Member List**: 
-    *   Profile pictures (PFPs) and custom injected user list card backgrounds (MemberSkins/UserBackgrounds) remain fully visible when the sidebar is collapsed.
-    *   Usernames, custom activity statuses, status badges, and decorative icons are hidden in the collapsed view to keep the UI clean, transitioning back into view with a smooth fade-in animation on hover.
-*   🤖 **Polished Badges**: Bot and App tags are styled in striking Discord brand blue (`#5865f2`) for a cohesive look.
-*   🧹 **Smart Header Hiding**: The Offline group header text is completely hidden in the collapsed view to maximize screen real estate and maintain visual balance.
+[![Tech Stack](https://skillicons.dev/icons?i=css,discord,git,github)](https://skillicons.dev)
 
 ---
 
-## 🚀 Installation
+## Features
 
-### Option 1: Direct File Installation (Recommended)
-1.  Download **[`Nox.theme.css`](./Nox.theme.css)** from this repository.
-2.  Open Discord / Vesktop, and go to **Settings** -> **Vencord** (or BetterDiscord) -> **Themes**.
-3.  Click **Open Themes Folder**.
-4.  Move `Nox.theme.css` into that directory.
-5.  Toggle the theme **On** in your client settings!
+* **Nox-Dark Palette**: Premium dark grey and black background colors (#121212 / #1e1e1e) designed to be highly comfortable for extended use.
+* **Muted Mentions**: Soft, semi-transparent highlight overlays and muted grey borders to reduce visual noise.
+* **Optimized Collapsed Sidebar**: The collapsed member list is widened (to 85px) to prevent server group header counters from clipping.
+* **Clean Member List**: Profile pictures and custom injected user list card backgrounds remain visible, while usernames, custom subtext, and badges are hidden in the collapsed view, transitioning smoothly back on hover.
+* **Custom App and Bot Badges**: App and Bot tags are colored in striking Discord brand blue (#5865f2).
+* **Smart Header Behavior**: The Offline group header text is automatically hidden when the sidebar is collapsed.
+* **Branded Title Bar**: Features a custom, elegant "NOX BY ACRILIC" text logo in a soft violet-blue accent.
 
-### Option 2: Online Import (Vencord / BetterDiscord)
-If you prefer to auto-update the theme directly from GitHub, add this line to your **Custom CSS** settings in Vesktop/Vencord:
+---
+
+## Installation
+
+### Option 1: Direct File Installation
+1. Download **[Nox.theme.css](./Nox.theme.css)** from this repository.
+2. Place the file inside your Discord/Vesktop themes folder (Settings -> Themes -> Open Themes Folder).
+3. Enable the theme in your client settings.
+
+### Option 2: Online Import
+Add this line directly to your client's custom CSS settings:
 
 ```css
 @import url('https://raw.githubusercontent.com/AKRiLLiCK/Nox/main/Nox.theme.css');
@@ -37,9 +37,6 @@ If you prefer to auto-update the theme directly from GitHub, add this line to yo
 
 ---
 
-## 📜 Credits & License
+## License
 
-*   Original Theme: **[Dark+](https://github.com/DevEvil99/DarkPlus-Discord-Theme)** by **[DevEvil](https://github.com/DevEvil99)**.
-*   Nox Customization & Refinement: **[Acrilic](https://github.com/AKRiLLiCK)**.
-
-This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details. Included copyright notice for the original works remains with DevEvil99.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
