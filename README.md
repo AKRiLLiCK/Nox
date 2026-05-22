@@ -7,7 +7,7 @@ A sleek, premium dark and polished user list theme for Vesktop, Vencord, and Bet
 
 ---
 
-![Nox Banner](./nox_banner.png)
+![Nox Preview](./nox_preview.png)
 
 ## <img src="https://skillicons.dev/icons?i=github" width="28" align="center" /> Overview
 
