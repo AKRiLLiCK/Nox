@@ -35,6 +35,12 @@
   --background-mentioned-hover: rgba(255, 255, 255, 0.08) !important;
   --mention-background: rgba(255, 255, 255, 0.1) !important;
   --mention-foreground: #cccccc !important;
+
+  /* Channel Mentions - Premium soft violet-blue accent */
+  --channel-mention-background: rgba(138, 148, 253, 0.12) !important;
+  --channel-mention-background-hover: rgba(138, 148, 253, 0.25) !important;
+  --channel-mention-foreground: #8a94fd !important;
+  --channel-mention-foreground-hover: #b4baff !important;
 }
 
 /* Explicit CSS overrides for mentions to ensure they are soft and readable */
@@ -52,6 +58,19 @@
 }
 [class*="mentioned"]::before {
   background-color: #888888 !important; /* A muted gray border instead of bright white/orange */
+}
+
+/* Distinct styling for interactive channel mentions to make them stand out as links */
+a.mention,
+a[class*="mention"] {
+  background-color: var(--channel-mention-background) !important;
+  color: var(--channel-mention-foreground) !important;
+  font-weight: 600;
+}
+a.mention:hover,
+a[class*="mention"]:hover {
+  background-color: var(--channel-mention-background-hover) !important;
+  color: var(--channel-mention-foreground-hover) !important;
 }
 
 /* Make collapsed member list sidebar wider so numbers don't get cut off */
