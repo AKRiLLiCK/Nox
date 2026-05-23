@@ -143,6 +143,45 @@ a[class*="mention"]:hover {
   height: auto !important;
 }
 
+/* Nox - Channel Text Color Customization */
+/* Scoped to the sidebar channels list for reliability */
+[class*="sidebar_"] [class*="wrapper_"] {
+  transition: color 0.15s ease;
+}
+
+/* Unread channel text & icon: Crisp White */
+[class*="sidebar_"] [class*="wrapper_"][class*="modeUnreadImportant_"] [class*="name_"],
+[class*="sidebar_"] [class*="wrapper_"][class*="modeUnread_"] [class*="name_"],
+[class*="sidebar_"] [class*="wrapper_"][class*="modeUnreadImportant_"] [class*="icon_"],
+[class*="sidebar_"] [class*="wrapper_"][class*="modeUnread_"] [class*="icon_"] {
+  color: #ffffff !important;
+}
+
+/* Selected channel text & icon: Crisp White */
+[class*="sidebar_"] [class*="wrapper_"][class*="modeSelected_"] [class*="name_"],
+[class*="sidebar_"] [class*="wrapper_"][class*="modeSelected_"] [class*="icon_"] {
+  color: #ffffff !important;
+}
+
+/* Hovered channel text & icon: Crisp White for interactive feedback */
+[class*="sidebar_"] [class*="wrapper_"]:hover [class*="name_"],
+[class*="sidebar_"] [class*="wrapper_"]:hover [class*="icon_"] {
+  color: #ffffff !important;
+}
+
+/* Read/Normal channel text & icon: Premium Muted Gray */
+[class*="sidebar_"] [class*="wrapper_"]:not([class*="modeUnreadImportant_"]):not([class*="modeUnread_"]):not([class*="modeSelected_"]):not(:hover) [class*="name_"],
+[class*="sidebar_"] [class*="wrapper_"]:not([class*="modeUnreadImportant_"]):not([class*="modeUnread_"]):not([class*="modeSelected_"]):not(:hover) [class*="icon_"] {
+  color: #8e9297 !important;
+}
+
+/* Muted channel text & icon: Darker Muted Gray */
+[class*="sidebar_"] [class*="wrapper_"][class*="modeMuted_"]:not([class*="modeSelected_"]):not(:hover) [class*="name_"],
+[class*="sidebar_"] [class*="wrapper_"][class*="modeMuted_"]:not([class*="modeSelected_"]):not(:hover) [class*="icon_"] {
+  color: #585f67 !important;
+}
+
+
 
 
 
