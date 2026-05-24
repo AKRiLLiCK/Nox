@@ -27,7 +27,7 @@ Nox is a refined, ultra-dark custom stylesheet designed to elevate your Discord 
 
 ### Core Enhancements
 - **Onyx Aesthetics**: Deep dark `#121212` backgrounds with muted borders and soft translucent highlights.
-- **Smart Member List**: The collapsed sidebar expands to `85px` to keep profile pictures visible while hiding usernames and offline groups to save space.
+- **Smart Member List**: The collapsed sidebar expands to `85px` to keep profile pictures visible, seamlessly adapting the chat window to prevent overlap while hiding usernames and offline groups to save space.
 - **Custom Accents**: Branded violet-blue `"NOX BY ACRILIC"` watermark logo in the title bar and blue Discord app badges.
 
 ---

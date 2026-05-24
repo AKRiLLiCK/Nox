@@ -89,6 +89,17 @@ a[class*="mention"]:hover {
   width: 240px !important;
 }
 
+/* Adjust chat content max-width to prevent the member list from overlapping and hiding the slow mode timer */
+[class*="chatContent_"] {
+  max-width: calc(100% - 85px) !important;
+  transition: max-width 0.25s ease;
+}
+
+/* Optional: shrink chat when member list is expanded so it doesn't hide anything */
+:root:has([class*="membersWrap"]:hover) [class*="chatContent_"] {
+  max-width: calc(100% - 240px) !important;
+}
+
 /* Hide usernames, subtext, and badges when collapsed, and transition them smoothly */
 [class*="membersWrap"] [class*="member"] [class*="username__"],
 [class*="membersWrap"] [class*="member"] [class*="name__"],
