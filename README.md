@@ -1,4 +1,4 @@
-# <img src="https://skillicons.dev/icons?i=discord" width="38" align="middle" /> Nox
+# <img src="https://skillicons.dev/icons?i=discord" width="38" align="middle" /> nox
 
 A sleek, premium dark and polished user list theme for Vesktop, Vencord, and BetterDiscord.
 
@@ -11,8 +11,8 @@ A sleek, premium dark and polished user list theme for Vesktop, Vencord, and Bet
 
 <div align="center">
 
-<a href="https://raw.githubusercontent.com/AKRiLLiCK/Nox/main/Nox.theme.css" target="_blank">
-  <img src="https://img.shields.io/badge/Install%20Theme-Nox.theme.css-8a94fd?style=for-the-badge&logo=css3&logoColor=white" height="40" alt="Direct Link to Nox.theme.css" />
+<a href="https://raw.githubusercontent.com/AKRiLLiCK/nox/main/nox.theme.css" target="_blank">
+  <img src="https://img.shields.io/badge/Install%20Theme-nox.theme.css-8a94fd?style=for-the-badge&logo=css3&logoColor=white" height="40" alt="Direct Link to nox.theme.css" />
 </a>
 
 </div>
@@ -38,12 +38,12 @@ Nox is a refined, ultra-dark custom stylesheet designed to elevate your Discord 
 Add this line directly to your client's custom CSS settings:
 
 ```css
-@import url('https://raw.githubusercontent.com/AKRiLLiCK/Nox/main/Nox.theme.css');
+@import url('https://raw.githubusercontent.com/AKRiLLiCK/nox/main/nox.theme.css');
 ```
 
 ### Manual Install
-1. Download [Nox.theme.css](./Nox.theme.css) and place it inside your client's themes folder.
-2. Enable **Nox** in your client settings.
+1. Download [nox.theme.css](./nox.theme.css) and place it inside your client's themes folder.
+2. Enable **nox** in your client settings.
 
 ---
 
