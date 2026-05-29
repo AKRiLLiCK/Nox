@@ -1,7 +1,7 @@
 /**
   * @name Nox
   * @author Acrilic
-  * @version 1.0.0
+  * @version 1.0.1
   * @description A clean, highly customized Nox-dark theme for Discord. Forked and modified from Dark+ by DevEvil.
   * @authorId 468132563714703390
   * @source https://github.com/AKRiLLiCK/nox
@@ -195,4 +195,128 @@ a[class*="mention"]:hover {
 
 
 
+/* Muted Microphone and Deafened Headset Icons Bright Red */
+/* This overrides the white color variable used by Dark+ and Discord locally for muted elements */
+[aria-checked="true"],
+[aria-pressed="true"],
+[aria-label*="Unmute" i],
+[aria-label*="Undeafen" i],
+[class*="buttonActive" i],
+[class*="colorDanger" i],
+[class*="colorRed" i],
+*:has(> svg > path[class*="strikethrough" i]),
+svg:has(path[class*="strikethrough" i]) {
+  --darkplus-sec: #ff0000 !important;
+  --white: #ff0000 !important;
+  --status-danger: #ff0000 !important;
+  --interactive-normal: #ff0000 !important;
+  --interactive-active: #ff0000 !important;
+}
 
+
+/* Custom Thinner Scrollbars for Channel List and Chat */
+/* Hidden by default, visible on hover */
+
+[class*="sidebar_"] [class*="scroller"]::-webkit-scrollbar,
+[class*="chatContent_"] [class*="scroller"]::-webkit-scrollbar {
+  width: 4px !important; 
+  height: 4px !important;
+}
+
+[class*="sidebar_"] [class*="scroller"]::-webkit-scrollbar-track,
+[class*="chatContent_"] [class*="scroller"]::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+[class*="sidebar_"] [class*="scroller"]::-webkit-scrollbar-thumb,
+[class*="chatContent_"] [class*="scroller"]::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+  border-radius: 10px !important;
+  border: none !important;
+}
+
+[class*="sidebar_"] [class*="scroller"]:hover::-webkit-scrollbar-thumb,
+[class*="chatContent_"] [class*="scroller"]:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+[class*="sidebar_"] [class*="scroller"]::-webkit-scrollbar-thumb:active,
+[class*="chatContent_"] [class*="scroller"]::-webkit-scrollbar-thumb:active {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+
+/* Unified Contour Lines & Borders */
+/* Redefines Discord's internal border variables so all contour lines perfectly match */
+.theme-dark, .theme-light, :root {
+    --border-faint: #1e1e1e !important;
+    --border-strong: #1e1e1e !important;
+    --border-subtle: #1e1e1e !important;
+    --background-modifier-accent: #1e1e1e !important;
+    --elevation-low: 0 1px 0 0 #1e1e1e !important;
+    --elevation-stroke: 0 0 0 1px #1e1e1e !important;
+}
+
+/* Explicitly force structural panel borders to #1e1e1e just in case they are hardcoded */
+[class^="sidebar_"],
+[class^="chat_"],
+[class^="chatContent_"],
+[class^="wrapper_"],
+[class^="container_"] > [class^="base_"] {
+    border-color: #1e1e1e !important;
+}
+
+/* Fix Top Title Bar Separator Line Discrepancy (Top-Left) */
+/* 1. Nuclear option to destroy all disjointed native top borders on the headers */
+#app-mount [class^="chatContent_"] [class*="title_"]::before,
+#app-mount [class^="chatContent_"] [class*="title_"]::after,
+#app-mount [class*="subtitleContainer_"]::before,
+#app-mount [class*="subtitleContainer_"]::after,
+#app-mount [class^="sidebar_"] > [class*="header_"]::before,
+#app-mount [class^="sidebar_"] > [class*="header_"]::after,
+#app-mount [class^="sidebar_"] > header::before,
+#app-mount [class^="sidebar_"] > header::after,
+#app-mount [class^="sidebar_"] > section[aria-label*="Channel" i]::before,
+#app-mount [class^="sidebar_"] > section[aria-label*="Channel" i]::after,
+#app-mount [class*="children_"]::before {
+    display: none !important;
+    opacity: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Explicitly draw the exact #1e1e1e border on the headers themselves to match native layout */
+#app-mount [class^="chatContent_"] [class*="title_"],
+#app-mount [class*="subtitleContainer_"],
+#app-mount [class^="sidebar_"] > [class*="header_"],
+#app-mount [class^="sidebar_"] > header,
+#app-mount [class^="sidebar_"] > section[aria-label*="Channel" i] {
+    border-top: 1px solid #1e1e1e !important;
+    box-shadow: none !important;
+}
+
+/* Ensure the layout panels themselves DO NOT draw extra native lines */
+#app-mount [class^="chatContent_"],
+#app-mount [class^="content_"],
+#app-mount [class^="sidebar_"],
+#app-mount [class^="chat_"] {
+    border-top: none !important;
+    box-shadow: none !important;
+}
+
+/* --- User Profile / Voice Controls Floating Island Fix --- */
+#app-mount [class^="panels_"] {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#app-mount [class^="panels_"] > [class^="container_"],
+#app-mount section[aria-label="User area"] {
+    border: none !important;
+    outline: none !important;
+    /* Apply the dark drop shadow directly to the inner rounded island */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8) !important;
+}
