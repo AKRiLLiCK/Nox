@@ -1,4 +1,4 @@
-# <img src="https://skillicons.dev/icons?i=discord" width="38" align="center" /> Nox
+# <img src="https://skillicons.dev/icons?i=discord" width="38" align="absmiddle" /> Nox
 
 A sleek, premium dark and polished user list theme for Vesktop, Vencord, and BetterDiscord.
 
@@ -11,7 +11,7 @@ A sleek, premium dark and polished user list theme for Vesktop, Vencord, and Bet
 
 <div align="center">
 
-<a href="https://raw.githubusercontent.com/AKRiLLiCK/nox/main/nox.theme.css" target="_blank">
+<a href="https://raw.githubusercontent.com/AKRiLLiCK/nox/v1.0.2/nox.theme.css" target="_blank">
   <img src="https://img.shields.io/badge/Install%20Theme-nox.theme.css-8a94fd?style=for-the-badge&logo=css3&logoColor=white" height="40" alt="Direct Link to nox.theme.css" />
 </a>
 
@@ -19,7 +19,7 @@ A sleek, premium dark and polished user list theme for Vesktop, Vencord, and Bet
 
 ---
 
-## <img src="https://skillicons.dev/icons?i=github" width="34" align="middle" /> Overview
+## <img src="https://skillicons.dev/icons?i=github" width="34" align="absmiddle" /> Overview
 
 Nox is a refined, ultra-dark custom stylesheet designed to elevate your Discord client experience with an onyx-inspired visual design, comfortable contrast, and micro-animations.
 
@@ -32,13 +32,13 @@ Nox is a refined, ultra-dark custom stylesheet designed to elevate your Discord 
 
 ---
 
-## <img src="https://skillicons.dev/icons?i=css" width="34" align="middle" /> Installation
+## <img src="https://skillicons.dev/icons?i=css" width="34" align="absmiddle" /> Installation
 
 ### Quick Import
 Add this line directly to your client's custom CSS settings:
 
 ```css
-@import url('https://raw.githubusercontent.com/AKRiLLiCK/nox/main/nox.theme.css');
+@import url('https://raw.githubusercontent.com/AKRiLLiCK/nox/v1.0.2/nox.theme.css');
 ```
 
 ### Manual Install
@@ -47,6 +47,6 @@ Add this line directly to your client's custom CSS settings:
 
 ---
 
-## <img src="https://skillicons.dev/icons?i=git" width="34" align="middle" /> License
+## <img src="https://skillicons.dev/icons?i=git" width="34" align="absmiddle" /> License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
