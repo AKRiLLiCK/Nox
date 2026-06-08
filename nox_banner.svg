@@ -1,44 +1,160 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%">
-  <defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 250"
+   width="100%"
+   height="100%"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="nox_banner.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="2.22"
+     inkscape:cx="649.77477"
+     inkscape:cy="124.77477"
+     inkscape:window-width="1920"
+     inkscape:window-height="1010"
+     inkscape:window-x="1913"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7" />
+  <defs
+     id="defs4">
     <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#121212" />
-      <stop offset="100%" stop-color="#1e1e1e" />
+    <linearGradient
+       id="bg-grad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#121212"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#1e1e1e"
+         id="stop2" />
     </linearGradient>
-    
     <!-- Accent Violet-Blue Gradient -->
-    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8a94fd" />
-      <stop offset="100%" stop-color="#5865f2" />
+    <linearGradient
+       id="accent-grad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#8a94fd"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#5865f2"
+         id="stop4" />
     </linearGradient>
-
     <!-- Subtle Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="12" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <filter
+       id="glow"
+       x="-0.18"
+       y="-0.18"
+       width="1.36"
+       height="1.36">
+      <feGaussianBlur
+         stdDeviation="12"
+         result="blur"
+         id="feGaussianBlur4" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="over"
+         id="feComposite4" />
     </filter>
   </defs>
-
   <!-- Background Card -->
-  <rect width="800" height="250" rx="16" fill="url(#bg-grad)" stroke="#1e1e1e" stroke-width="2" />
-
+  <rect
+     width="800"
+     height="250"
+     rx="16"
+     fill="url(#bg-grad)"
+     stroke="#1e1e1e"
+     stroke-width="2"
+     id="rect4"
+     x="0"
+     y="0"
+     style="display:inline" />
   <!-- Diagonal Grid Effect -->
-  <path d="M-100,250 L250,-100 M-50,250 L300,-100 M0,250 L350,-100 M50,250 L400,-100 M100,250 L450,-100" stroke="#1e1e1e" stroke-width="1.5" opacity="0.3" />
-
+  <path
+     d="M-100,250 L250,-100 M-50,250 L300,-100 M0,250 L350,-100 M50,250 L400,-100 M100,250 L450,-100"
+     stroke="#1e1e1e"
+     stroke-width="1.5"
+     opacity="0.3"
+     id="path4" />
   <!-- Glowing Abstract Orb -->
-  <circle cx="700" cy="125" r="80" fill="url(#accent-grad)" opacity="0.15" filter="url(#glow)" />
-  <circle cx="700" cy="125" r="40" fill="url(#accent-grad)" opacity="0.25" />
-
+  <circle
+     cx="700"
+     cy="125"
+     r="80"
+     fill="url(#accent-grad)"
+     opacity="0.15"
+     filter="url(#glow)"
+     id="circle4" />
+  <circle
+     cx="700"
+     cy="125"
+     r="40"
+     fill="url(#accent-grad)"
+     opacity="0.25"
+     id="circle5" />
   <!-- Premium Typography -->
   <!-- NOX Title -->
-  <text x="60" y="115" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="56" fill="url(#accent-grad)" letter-spacing="2">NOX</text>
-  
+  <text
+     x="60"
+     y="115"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-weight="900"
+     font-size="56"
+     fill="url(#accent-grad)"
+     letter-spacing="2"
+     id="text5">NOX</text>
   <!-- Subtitle -->
-  <text x="60" y="150" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="20" fill="#a0a0a0" letter-spacing="1">VESKTOP &amp; VENCORD THEME</text>
-
+  <text
+     x="60"
+     y="150"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-weight="500"
+     font-size="20"
+     fill="#a0a0a0"
+     letter-spacing="1"
+     id="text6">VESKTOP &amp; VENCORD THEME</text>
   <!-- Sleek Tagline -->
-  <text x="60" y="180" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="14" fill="#626262" letter-spacing="0.5">Ultra-dark onyx aesthetics with a premium polished layout</text>
-
+  <text
+     x="60"
+     y="180"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-weight="400"
+     font-size="14px"
+     fill="#626262"
+     letter-spacing="0.5"
+     id="text7">Dark theme with a premium and polished UI/UX</text>
   <!-- Top Decorative Line -->
-  <line x1="60" y1="55" x2="160" y2="55" stroke="url(#accent-grad)" stroke-width="3" stroke-linecap="round" />
+  <line
+     x1="60"
+     y1="55"
+     x2="160"
+     y2="55"
+     stroke="url(#accent-grad)"
+     stroke-width="3"
+     stroke-linecap="round"
+     id="line7" />
 </svg>
