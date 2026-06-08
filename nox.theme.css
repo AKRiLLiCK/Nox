@@ -1,7 +1,7 @@
 /**
   * @name Nox
   * @author Acrilic
-  * @version 1.0.1
+  * @version 1.0.2
   * @description A clean, highly customized Nox-dark theme for Discord. Forked and modified from Dark+ by DevEvil.
   * @authorId 468132563714703390
   * @source https://github.com/AKRiLLiCK/nox
@@ -197,11 +197,11 @@ a[class*="mention"]:hover {
 
 /* Muted Microphone and Deafened Headset Icons Bright Red */
 /* This overrides the white color variable used by Dark+ and Discord locally for muted elements */
-[aria-checked="true"],
-[aria-pressed="true"],
+[class^="panels_"] [aria-checked="true"],
+[class^="panels_"] [aria-pressed="true"],
 [aria-label*="Unmute" i],
 [aria-label*="Undeafen" i],
-[class*="buttonActive" i],
+[class^="panels_"] [class*="buttonActive" i],
 [class*="colorDanger" i],
 [class*="colorRed" i],
 *:has(> svg > path[class*="strikethrough" i]),
@@ -319,4 +319,37 @@ svg:has(path[class*="strikethrough" i]) {
     outline: none !important;
     /* Apply the dark drop shadow directly to the inner rounded island */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Fix GIF / Expression Picker unselected tabs being white */
+[class*="picker" i] [role="tab"]:not([aria-selected="true"]),
+[class*="picker" i] [class*="navButton" i]:not([class*="navButtonActive" i]):not([aria-selected="true"]) {
+    color: #8e9297 !important;
+}
+[class*="picker" i] [role="tab"]:hover:not([aria-selected="true"]),
+[class*="picker" i] [class*="navButton" i]:hover:not([class*="navButtonActive" i]):not([aria-selected="true"]) {
+    color: #b9bbbe !important;
+}
+
+/* Force Voice Connected speaker icon inside badges to be pure white */
+[class*="lowerBadge_" i] svg,
+[class*="lowerBadge_" i] svg path,
+[class*="iconBadge_" i] svg,
+[class*="iconBadge_" i] svg path,
+[class*="wrapper_" i] > div[class*="badge_" i] svg,
+[class*="wrapper_" i] > div[class*="badge_" i] svg path {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+/* Remove PFP hover effects and shadows */
+[class*="avatar_" i][class*="clickable_" i],
+.avatar_c19a55.clickable_c19a55 {
+    filter: none !important;
+}
+
+[class*="avatar_" i]:hover[class*="clickable_" i]:hover,
+.avatar_c19a55:hover.clickable_c19a55:hover {
+    transform: none !important;
+    filter: none !important;
 }

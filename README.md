@@ -1,4 +1,4 @@
-# <img src="https://skillicons.dev/icons?i=discord" width="38" align="middle" /> nox
+# <img src="https://skillicons.dev/icons?i=discord" width="38" align="center" /> Nox
 
 A sleek, premium dark and polished user list theme for Vesktop, Vencord, and BetterDiscord.
 
