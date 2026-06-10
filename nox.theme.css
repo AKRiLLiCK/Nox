@@ -1,7 +1,7 @@
 /**
   * @name Nox
   * @author Acrilic
-  * @version 1.0.2
+  * @version 1.1.0
   * @description A clean, highly customized Nox-dark theme for Discord. Forked and modified from Dark+ by DevEvil.
   * @authorId 468132563714703390
   * @source https://github.com/AKRiLLiCK/nox
@@ -95,11 +95,6 @@ a[class*="mention"]:hover {
   transition: max-width 0.25s ease;
 }
 
-/* Optional: shrink chat when member list is expanded so it doesn't hide anything */
-:root:has([class*="membersWrap"]:hover) [class*="chatContent_"] {
-  max-width: calc(100% - 240px) !important;
-}
-
 /* Hide usernames, subtext, and badges when collapsed, and transition them smoothly */
 [class*="membersWrap"] [class*="member"] [class*="username__"],
 [class*="membersWrap"] [class*="member"] [class*="name__"],
@@ -129,8 +124,7 @@ a[class*="mention"]:hover {
 }
 
 /* Hide the offline group header when collapsed */
-[class*="membersWrap"]:not(:hover) [class*="membersGroup__"]:not(:has(~ [class*="membersGroup__"])),
-[class*="membersWrap"]:not(:hover) [class*="membersGroup"]:not(:has(~ [class*="membersGroup"])) {
+[class*="membersWrap"]:not(:hover) [class*="membersGroup"]:last-of-type {
   display: none !important;
 }
 
@@ -160,22 +154,14 @@ a[class*="mention"]:hover {
   transition: color 0.15s ease;
 }
 
-/* Unread channel text & icon: Crisp White */
+/* Unread, Selected, or Hovered channel text & icon: Crisp White */
 [class*="sidebar_"] [class*="wrapper_"][class*="modeUnreadImportant_"] [class*="name_"],
 [class*="sidebar_"] [class*="wrapper_"][class*="modeUnread_"] [class*="name_"],
-[class*="sidebar_"] [class*="wrapper_"][class*="modeUnreadImportant_"] [class*="icon_"],
-[class*="sidebar_"] [class*="wrapper_"][class*="modeUnread_"] [class*="icon_"] {
-  color: #ffffff !important;
-}
-
-/* Selected channel text & icon: Crisp White */
 [class*="sidebar_"] [class*="wrapper_"][class*="modeSelected_"] [class*="name_"],
-[class*="sidebar_"] [class*="wrapper_"][class*="modeSelected_"] [class*="icon_"] {
-  color: #ffffff !important;
-}
-
-/* Hovered channel text & icon: Crisp White for interactive feedback */
 [class*="sidebar_"] [class*="wrapper_"]:hover [class*="name_"],
+[class*="sidebar_"] [class*="wrapper_"][class*="modeUnreadImportant_"] [class*="icon_"],
+[class*="sidebar_"] [class*="wrapper_"][class*="modeUnread_"] [class*="icon_"],
+[class*="sidebar_"] [class*="wrapper_"][class*="modeSelected_"] [class*="icon_"],
 [class*="sidebar_"] [class*="wrapper_"]:hover [class*="icon_"] {
   color: #ffffff !important;
 }
@@ -193,19 +179,17 @@ a[class*="mention"]:hover {
 }
 
 
-
-
 /* Muted Microphone and Deafened Headset Icons Bright Red */
-/* This overrides the white color variable used by Dark+ and Discord locally for muted elements */
+/* Overrides white color variable used by Dark+ and Discord locally for muted elements */
 [class^="panels_"] [aria-checked="true"],
 [class^="panels_"] [aria-pressed="true"],
 [aria-label*="Unmute" i],
 [aria-label*="Undeafen" i],
+[aria-label*="Muted" i],
+[aria-label*="Deafened" i],
 [class^="panels_"] [class*="buttonActive" i],
 [class*="colorDanger" i],
-[class*="colorRed" i],
-*:has(> svg > path[class*="strikethrough" i]),
-svg:has(path[class*="strikethrough" i]) {
+[class*="colorRed" i] {
   --darkplus-sec: #ff0000 !important;
   --white: #ff0000 !important;
   --status-danger: #ff0000 !important;
